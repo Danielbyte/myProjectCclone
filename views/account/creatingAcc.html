@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Create Account</title>
+        <meta charset="utf-8">
+        <!-- <script defer src="/cdn/scripts/Account/account.js"></script> -->
+    </head>
+    <body>
+        <h1>Create Account</h1>
+        <form action="api/create" method="POST">
+            
+            <label for="username">Enter username:</label>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <br><br>
+
+            <label for="student-number">Enter student Number:</label>
+            <input type="text" id="student-number" name="studentnumber" placeholder="student number" required>
+            <br><br>
+
+            <label for="create-password">Create password:</label>
+            <input type="password"  name="createpassword" id="create-password" placeholder= "create password" required>
+            <br><br>
+
+            <label for="password">Cornfirm password:</label>
+            <input type="password"  name="confirmpassword" id="confirm-password" placeholder= "confirm password" required>
+            <br><br>
+
+            <button id= "createButton" >Create Account</button>
+     
+
+        </form>
+    </body>
+</html>

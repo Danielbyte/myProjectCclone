@@ -1,0 +1,36 @@
+/*Homepage style sheet*/
+body{
+    background: skyblue;
+}
+
+/*Navbar Decoration*/
+.mynav {
+    background: rgba(166, 173, 164, 0.89) !important;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #777;
+    margin-left: 0px;
+    margin-top: -5;
+}
+
+.navbar-brand:hover {
+    border-bottom: 2px solid transparent !important;
+}
+
+.mynav a{
+    margin-right: 30px;
+    color: black !important;
+    border-bottom: 2px solid transparent;
+}
+
+.mynav a:hover {
+    border-bottom: 2px solid black;
+}
+
+.active a {
+    border-bottom: 2px solid black;
+}
