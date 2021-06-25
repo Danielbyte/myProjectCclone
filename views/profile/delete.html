@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Delete Account</title>
+        <meta charset="utf-8">
+    
+    </head>
+    <body>
+        <h1>Delete Account </h1>
+        <br>
+        <h3>Enter your details to verify deletion of your account </h3>
+        <form action="api/delete" method="POST">
+            
+            <label for="username">Enter username:</label>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <br><br>
+
+            <label for="student-number">Enter student Number:</label>
+            <input type="text" id="student-number" name="studentnumber" placeholder="student number" required>
+            <br><br>
+
+            <label for="password">Enter password:</label>
+            <input type="password"  name="password" id="password" placeholder= "Enter password" required>
+            <br><br>
+            
+            <button id= "deleteButton" >Delete</button>
+     
+
+        </form>
+    </body>
+</html>
