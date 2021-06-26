@@ -21,7 +21,6 @@ router.get('/api/list', function (req, res) {
 })
 
 router.post('/api/login', function (req, res) {
-  const username = req.body.username
   const studentNumber = req.body.studentnumber
   const password = req.body.password
 
@@ -30,7 +29,7 @@ router.post('/api/login', function (req, res) {
   if (isvalid === 'false') {
     res.redirect('/account/invalidUserOrId')
   } else {
-    res.redirect(req.baseUrl + '/api/profile')
+    res.redirect('/loggedin')
   }
 })
 

@@ -11,10 +11,6 @@ router.get('/login', function (req, res) {
   res.sendFile(path.join(__dirname, '../views', 'account', 'login.html'))
 })
 
-router.get('/api/welcome', function (req, res) {
-  res.sendFile(path.join(__dirname, '../views', 'account', 'welcome.html'))
-})
-
 router.get('/api/list', function (req, res) {
   res.json(list.studentList) // Respond with JSON
 })
@@ -28,7 +24,8 @@ router.post('/api/create', function (req, res) {
 
   // create account by assing a student
   const List = addStudent(username, studentNumber, password, confpassword)
-  res.redirect(req.baseUrl + '/api/welcome')
+  // redirect to homepage if account creation was successful
+  res.redirect('/')
   console.log(List)
 })
 
